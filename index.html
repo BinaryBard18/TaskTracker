@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/clipboard.png"></link>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css"></link>
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="whole">
+
+        <div class="header">
+            <h1 class="name">Task<span>Tracker</span></h1>
+        </div>
+
+        <div class="parent-div">
+            <div class="container">
+                <div class="child-div">
+                    <div class="head">
+                        <div class="todo">
+                            <h2>ToDo Done</h2>
+                            <p class="keep">keep it up</p>
+                        </div>
+                    </div>
+                    <div class="tracker">
+                        <!-- 1/5 Done wala thing should be made to apply here -->
+                        <h1 id="count"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="input--add">
+                <input type="text" placeholder="Write your next Task" id="text" autocomplete="off">
+                <button type="button" id="addTask" onclick="addTask()">+</button>
+            </div>
+            <div class="allTasks">
+                <!-- append all the tasks here -->
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

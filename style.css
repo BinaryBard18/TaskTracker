@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+.whole{
+    width: 100%;
+    height: 100vh;
+    background-color:#0d0d0d ; 
+}
+.parent-div{
+    width: 100%;
+    height: auto;
+    background-color:#0d0d0d ;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.name{
+    color: #cebea4;
+    padding: 2rem;
+}
+.name span{
+    color: #f75933;
+}
+.todo{
+    font-size: 2rem;
+    color: #cebea4;
+}
+.keep{
+    font-size: 1.5rem;
+    color: #aea18b;
+}
+.child-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 40rem;
+    height:auto;
+    border: 1px solid #8e8472;
+    border-radius: 1rem;
+}
+.tracker{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #ff5631;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#count{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.input--add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+#text{
+    width: 30rem;
+    height: 6vh;
+    text-indent: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    outline: none;
+    color: #cebea4;
+}
+#addTask{
+    background-color: #ff5631;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 50%;
+    cursor: pointer;
+    border:none;
+}
+#addTask:active{
+    transform: scale(0.97);
+    transition: 0.2s ease;
+    font-size: 1.4rem;
+}
+.allTasks{
+    width: 40rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 5rem;
+}::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    background-color: #302e2e; /* Background color of the scrollbar track */
+  }
+  
+  /* Scrollbar Thumb (Scroller) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff5631; /* Color of the scrollbar thumb (scroller) */
+    border-radius: 5px; /* Optional: Set border radius for a rounded thumb */
+  }
+  
+  /* Optional: Hover styles for the scrollbar thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ae3e25; /* Change color on hover */
+  }
